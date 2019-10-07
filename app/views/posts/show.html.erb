@@ -1,8 +1,17 @@
-<p>
-    <strong >Title:</strong >
-    <%= @post.title %>
-</p>
-<p>
-<strong >Body:</strong >
-    <%= @post.body %>
-</p>
+<div class="jumbotron">
+  <h2 > <%= @post.title %> </h2 >
+  <span class="label label-primary">
+    Last update <%= @post.updated_at.strftime ("%b %d, %Y") %>
+  </span >
+</div >
+<div class ="panel panel-default">
+  <div class ="panel-body">
+    <p>
+      <%= @post.body %>
+      ...
+    </p>
+  </div >
+  <div class="text-right">
+    <%= link_to 'Back', posts_path , class: 'btn btn-outline-secondary' %>
+  </div >
+</div >
