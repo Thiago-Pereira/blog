@@ -1,3 +1,15 @@
+<% if @post.errors.any? %>
+  <div class="alert alert-danger" role="alert">
+    <h4 class="alert-heading">Request failed ! </h4>
+    <ul >
+      <% @post.errors.full_messages.each do |message| %>
+        <li> <%=message %> </li >
+      <%end %>
+    </ul >
+    <hr >
+    <p class ="mb -0">Please , correct issues and try again . </p>
+  </div >
+<% end %>
 <div class="card">
   <%= form_with model: @post , local: true do |form| %>
     <div class="card-body ">
