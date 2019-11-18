@@ -17,7 +17,7 @@ end
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 
-gem 'bootstrap', '~> 4.2.1'
+gem 'bootstrap', '~> 4.3.1'
 gem 'autoprefixer-rails', '~> 9.6.4'
 gem 'jquery-rails', '~> 4.3.5'
 # Use SCSS for stylesheets
